@@ -1,9 +1,9 @@
 " Aesthetics
-" set background=light
+set background=light
 " color mustang
 " color railscasts2
 
-" let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 set t_Co=16
 set background=dark
 colorscheme solarized
@@ -38,6 +38,7 @@ map <Leader>cl :ccl<CR>
 map <Leader>cn :cn<CR>
 map <Leader>cp :cp<CR>
 
+map gp `[v`]
 
 " Git
 map <Leader>gr :Gread
@@ -77,10 +78,14 @@ map ,sn :e ~/.vim/janus/vim/tools/snipmate-snippets/snippets/ruby.snippets<cr>
 
 " vim-turbux, depends on TSlime
 "let g:turbux_command_rspec  = 'script/test'        " use Gary Bernhardt's script
-let g:turbux_command_rspec  = 's'
-let g:turbux_command_cucumber  = 'zeus cucumber'
+let g:no_turbux_mappings = 1
+let g:turbux_command_rspec  = 'zeus rspec --format doc'
+let g:turbux_command_cucumber  = 'cucumber'
 
-" Tslime and Tmux
+" Tmux / turbux
+let g:no_turbux_mappings = 1
+let g:turbux_runner  = 'tslime'      " default: vimux OR tslime OR vim
+
 map <leader>T <Plug>SendTestToTmux
 map <leader>t <Plug>SendFocusedTestToTmux
 "map ,R :SweetVimRspecRunFile<CR>
@@ -142,8 +147,6 @@ map <leader>gf :CtrlP %%<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " map <leader>cp :set invpaste<CR>:set paste?<CR>
 
-" Tmux / turbux
-let g:no_turbux_mappings = 1
 
 " Rails Alternate file
 map <Leader>ra :A<CR>
