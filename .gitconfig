@@ -1,11 +1,11 @@
 [core]
 	quotepath = false
-	excludesfile = /Users/zac/.gitignore
+	excludesfile = /Users/lixiang/.gitignore
 	editor = /usr/bin/vim
 	autocrlf = input
 [user]
-	name = Zac Zheng
-	email = zac@zenpow.com
+	name = Lixiang Ding
+	email = zhimadlx@gmail.com
 [origin]
   push = refs/tags/*:refs/tags/*
 [alias]
