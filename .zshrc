@@ -39,7 +39,7 @@ s() {
 }
 
 # load up Z
-. ~/.oh-my-zsh/custom/plugins/z/z.sh
+. ~/.oh-my-zsh/plugins/z/z.sh
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,3 +85,8 @@ current_hotfix_branch ()
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export SAUCE_USERNAME=zaczheng_github
+export SAUCE_ACCESS_KEY=5c0a03b5-5fab-4f5c-965e-b145feb5ce0f
+
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
