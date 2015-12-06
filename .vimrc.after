@@ -127,6 +127,10 @@ map <Leader><Leader> <C-^>
 :vnoremap <leader>rem  :RExtractMethod<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>gs :Gstatus<cr>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FILE NAVIGATION
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " map <Leader>g :CtrlPMRU<CR>

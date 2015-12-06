@@ -61,8 +61,8 @@ unsetopt correct_all
 export PATH=$PATH:.
 
 # rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
+#export PATH=$HOME/.rbenv/bin:$PATH
+#eval "$(rbenv init -)"
 
 # git flow completion
 source ~/dot-files/git-flow-completion.zsh
@@ -85,8 +85,6 @@ current_hotfix_branch ()
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export SAUCE_USERNAME=zaczheng_github
-export SAUCE_ACCESS_KEY=5c0a03b5-5fab-4f5c-965e-b145feb5ce0f
 
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
